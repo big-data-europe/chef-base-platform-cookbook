@@ -1,4 +1,7 @@
-# 0.1.7
+# 0.1.0
 
 Initial release of bde-cluster
-Includes HDFS namenode, datanode recipes
+
+# 0.1.17
+
+Zookeeper recipe added
