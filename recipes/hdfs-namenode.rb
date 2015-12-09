@@ -1,3 +1,5 @@
+node.default['hadoop']['hdfs_site']['dfs.name.dir'] = 'file:///hadoop/hadoop-hdfs/dfs/name'
+
 include_recipe 'bde-cluster::default'
 include_recipe 'hadoop::default'
 include_recipe 'hadoop::hadoop_hdfs_namenode'

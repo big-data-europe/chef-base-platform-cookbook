@@ -1,3 +1,5 @@
+node.default['hadoop']['core_site']['fs.defaultFS'] = 'hdfs://node102.local'
+
 include_recipe 'bde-cluster::default'
 include_recipe 'hadoop::default'
 include_recipe 'hadoop::hadoop_hdfs_datanode'
