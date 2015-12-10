@@ -8,7 +8,6 @@ ruby_block 'initaction-hdfs-namenode-format' do
   block do
     resources('execute[hdfs-namenode-format]').run_action(:run)
   end
-  not_if { ::File.directory?("#{node['hadoop']['hdfs_site']['dfs.name.dir'][7..-1]}") }
 end
 
 ruby_block 'service-hadoop-hdfs-namenode-start-and-enable' do
