@@ -1,3 +1,8 @@
+#
+# Cookbook Name:: bde-cluster
+# Recipe:: hdfs-namenode
+#
+
 node.default['hadoop']['hdfs_site']['dfs.name.dir'] = 'file:///hadoop/hadoop-hdfs/dfs/name'
 
 include_recipe 'bde-cluster::default'

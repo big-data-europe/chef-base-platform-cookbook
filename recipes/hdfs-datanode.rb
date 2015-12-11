@@ -1,3 +1,8 @@
+#
+# Cookbook Name:: bde-cluster
+# Recipe:: hdfs-datanode
+#
+
 node.default['hadoop']['core_site']['fs.defaultFS'] = 'hdfs://node102.local'
 
 include_recipe 'bde-cluster::default'
