@@ -6,5 +6,6 @@
 data_bag_zookeeper = data_bag_item('config', 'zookeeper')
 zk_string = "zk://#{data_bag_zookeeper['production'].join(':2181,')}:2181/mesos"
 node.default['mesos']['slave']['flags']['master'] = zk_string
+node.default['mesos']['slave']['flags']['containerizers'] = 'docker,mesos'
 
 include_recipe 'mesos::slave'

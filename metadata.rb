@@ -4,7 +4,7 @@ maintainer_email 'iermilov@informatik.uni-leipzig.de'
 license          'MIT'
 description      'Installs/Configures bde-cluster'
 long_description 'Installs/Configures bde-cluster'
-version          '1.0.0'
+version          '1.0.1'
 
 depends 'java'
 depends 'hadoop', '~> 2.0.9'
