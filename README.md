@@ -1,3 +1,5 @@
+# [DEPRECATED] this cookbook is not maintained
+
 # bde-cluster-cookbook
 
 This cookbook wraps HDFS, Zookeeper and Mesos cookbooks and provides information about how to deploy BDE cluster.
